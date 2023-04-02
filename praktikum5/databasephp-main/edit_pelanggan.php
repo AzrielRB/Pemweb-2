@@ -7,7 +7,7 @@ $st->execute([$id]);
 $result = $st->fetch();
 ?>
             
-<form method="POST" action="../../proses/pelanggan/proses_pelanggan.php">
+<form method="POST" action="list_pelanggan.php">
 <input type="hidden" name="idedit" value="<?= $result['id'] ?>">
   <div class="form-group row">
     <label for="kode" class="col-4 col-form-label">Kode</label> 
