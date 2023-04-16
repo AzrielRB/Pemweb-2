@@ -1,5 +1,5 @@
 <?php
-    require_once 'dbuts.php'
+    require_once 'dbtoko.php'
 
 ?>
 
@@ -15,40 +15,41 @@
 <body>
     <div class="row">
 	<div class="col-md-8">
-<form>
+<form action="proses_produk.php" method="POST">
   <div class="form-group">
     <label for="formGroupExampleInput">Kode</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    <input type="text" class="form-control" id="kode" placeholder="Example input">
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput2">Nama</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+    <input type="text" class="form-control" id="nama" placeholder="Another input">
   </div>
   <div class="form-group">
     <label for="formGroupExampleInput">Harga jual</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    <input type="text" class="form-control" id="harga_jual" placeholder="Example input">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">Harga Beli</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    <label for="">Harga Beli</label>
+    <input type="text" class="form-control" id="harga_beli" placeholder="Example input">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">Stok</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    <label for="">Stok</label>
+    <input type="text" class="form-control" id="" placeholder="Example input">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">Min Stok</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    <label for="">Min Stok</label>
+    <input type="text" class="form-control" id="" placeholder="Example input">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">Deksripsi</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+    <label for="">Deksripsi</label>
+    <input type="text" class="form-control" id="" placeholder="Example input">
   </div>
   <div class="form-group">
-    <label for="formGroupExampleInput">Kategori</label>
+    <label for="">Kategori</label>
     <div>
             <?php
-                $sqlkategori = "SELECT * FROM kategori_produk";
+            $conn->query("USE $dbtoko");
+                $sqlkategori = "SELECT * FROM `kategori_produk`;";
                 $rskategori = $conn->query($sqlkategori);
             ?>
             <select name="kategori_produk" id="kategori_produk">
@@ -62,6 +63,7 @@
             </select>
         </div>
   </div>
+  <input class="btn btn-primary" type="submit" name="proses" value="Simpan">
 </form>
     </div>
     </div>

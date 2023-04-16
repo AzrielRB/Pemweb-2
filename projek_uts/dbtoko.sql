@@ -3,6 +3,7 @@ CREATE TABLE kategori_produk (
     nama VARCHAR(45) NOT NULL
 );
 
+
 CREATE TABLE produk (
     id INT KEY AUTO_INCREMENT,
     kode VARCHAR(10) NOT NULL,
