@@ -10,10 +10,10 @@
 </head>
 <body id="bg-login"> 
     <div class="box-login">
-        <h2>Login</h2>
+        <h2>Selamat Datang</h2>
         <form action="" method="POST">
-            <input type="text" name="user" placeholder="Username" class="input-control">
-            <input type="password" name="pass" placeholder="password" class="input-control">
+            <input type="text" name="user" placeholder="klik login" class="input-control">
+            <input type="password" name="pass" placeholder="Klik login" class="input-control">
             <button class="btn btn-primary"type="button" onclick="location.href='home.php' ">Login</button>
         </form>
     </div>

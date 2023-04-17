@@ -10,7 +10,7 @@
 		<meta name="author" content="" />
 		<title>NFShop</title>
 		<!-- Favicon-->
-		<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="template/dist/img/i" />
 		<!-- Bootstrap icons-->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -42,13 +42,6 @@
 						</li>
 						<li class="nav-item"><a class="nav-link" href="produk1.php">product</a></li>
 					</ul>
-					<form class="d-flex">
-						<button class="btn btn-primary" type="submit">
-							<i class="bi-cart-fill me-1"></i>
-							Cart
-							<span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-						</button>
-					</form>
 					<button class="btn btn-dark" style="margin-left: 20px" type="button" onclick="location.href='login.php' ">Login</button>
 				</div>
 			</div>

@@ -107,7 +107,7 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <i class="nav-icon fas fa-list-alt"></i>
               <p>
                 Kategori
                 <i class="right fas fa-angle-left"></i>
@@ -115,7 +115,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="./sepatu.php" class="nav-link active">
+                <a href="./sepatu.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Sepatu</p>
                 </a>

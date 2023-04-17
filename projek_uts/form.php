@@ -1,6 +1,6 @@
 <?php
     include_once 'template\header.php';
-    require_once 'dbtoko.php'
+    require_once 'dbtoko.php';
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +18,7 @@
 <form action="proses_pesanan.php" method="POST">
   <div class="form-group">
     <label for="tanggal">Tanggal</label>
-    <input type="date" class="form-control" id="kode" >
+    <input type="date" class="form-control" id="tanggal" >
   </div>
   <div class="form-group">
     <label for="nama">Nama customer</label>
@@ -26,19 +26,19 @@
   </div>
   <div class="form-group">
     <label for="alamat">Alamat customer</label>
-    <input type="text" class="form-control" id="harga_jual" >
+    <input type="text" class="form-control" id="alamat" >
   </div>
   <div class="form-group">
-    <label for="nohp">Nomor Handphone</label>
-    <input type="text" class="form-control" id="harga_beli" >
+    <label for="no_hp">Nomor Handphone</label>
+    <input type="text" class="form-control" id="no_hp" >
   </div>
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" class="form-control" id="stok" >
+    <input type="email" class="form-control" id="email" >
   </div>
   <div class="form-group">
     <label for="jumlah">Jumlah </label>
-    <input type="number" class="form-control" id="min_stok" >
+    <input type="number" class="form-control" id="jumlah" >
   </div>
   <div class="form-group">
     <label for="">Deskripsi</label>
@@ -48,15 +48,14 @@
     <label>produk</label>
     <div>
             <?php
-            $conn->query("USE $dbtoko");
-                $sqlkategori = "SELECT * FROM `produk`;";
-                $rskategori = $conn->query($sqlkategori);
+                $sqlproduk = "SELECT * FROM produk";
+                $rsproduk = $conn->query($sqlproduk);
             ?>
             <select name="produk" id="produk">
             <?php
-                foreach($rskategori as $rowkategori){
+                foreach($rsproduk as $rowproduk){
             ?>
-                <option value="<?=$rowkategori['id']?>" ><?=$rowkategori['nama']?></option>
+                <option value="<?=$rowproduk['id']?>" ><?=$rowproduk['nama']?></option>
             <?php
                 }
             ?>
