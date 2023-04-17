@@ -8,6 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User</title>
+  <link rel="icon" type="image/x-icon" href="#" />
 </head>
 <body>
 <div class="container-fluid">
@@ -26,7 +27,7 @@
 								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Beli</a>
+								<a class="btn btn-primary" href="form.php">Beli</a>
 							</p>
 						</div>
 					</div>
@@ -43,7 +44,7 @@
 								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Beli</a>
+								<a class="btn btn-primary" href="form.php">Beli</a>
 							</p>
 						</div>
 					</div>
@@ -60,7 +61,7 @@
 								Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 							</p>
 							<p>
-								<a class="btn btn-primary" href="#">Beli</a>
+								<a class="btn btn-primary" href="form.php">Beli</a>
 							</p>
 						</div>
 					</div>

@@ -1,106 +1,75 @@
-<?php 
-require_once 'dbuts.php';
+<?php
+    include_once 'template\header.php';
+    require_once 'dbtoko.php'
 ?>
-            
-<form method="POST" action="proses_produk.php">
-  <div class="form-group row">
-    <label for="kode" class="col-4 col-form-label">Kode</label> 
-    <div class="col-8">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <i class="fa fa-anchor"></i>
-          </div>
-        </div> 
-        <input id="kode" name="kode" type="text" class="form-control"
-        value="">
-      </div>
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="nama" class="col-4 col-form-label">Nama Produk</label> 
-    <div class="col-8">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <i class="fa fa-adjust"></i>
-          </div>
-        </div> 
-        <input id="nama" name="nama" type="text" class="form-control" 
-        value="">
-      </div>
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="harga_beli" class="col-4 col-form-label">Harga Beli</label> 
-    <div class="col-8">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <i class="fa fa-arrow-circle-o-left"></i>
-          </div>
-        </div> 
-        <input id="harga_beli" name="harga_beli" 
-        value="" type="text" class="form-control">
-      </div>
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="stok" class="col-4 col-form-label">Stok</label> 
-    <div class="col-8">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <i class="fa fa-arrow-circle-up"></i>
-          </div>
-        </div> 
-        <input id="stok" name="stok" value=""
-        type="text" class="form-control">
-      </div>
-    </div>
-  </div>  
-  <div class="form-group row">
-    <label for="min_stok" class="col-4 col-form-label">Minimum Stok</label> 
-    <div class="col-8">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <i class="fa fa-arrow-circle-right"></i>
-          </div>
-        </div> 
-        <input id="min_stok" name="min_stok" 
-        value=""
-        type="text" class="form-control">
-      </div>
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="jenis" class="col-4 col-form-label">kategori Produk</label> 
-    <div class="col-8">
-        <?php 
-            $sqlkategori = "SELECT * FROM kategori_produk";
-            $rskategori = $conn->query($sqlkategori);
-        ?>
-      <select id="jenis" name="jenis" class="custom-select">
-          <?php 
-            foreach($rskategori as $rowkategori){
-         ?>
-            <option value="<?=$rowkategori['id']?>"><?=$rowkategori['nama']?></option>
-         <?php
-            }
-        ?>
-        <!--
-        <option value="1">Elektronik</option>
-        <option value="2">Furniture</option>
-        <option value="3">Makanan</option>-->
 
-      </select>
-    </div>
-  </div> 
-  <div class="form-group row">
-    <div class="offset-4 col-8">
-      <input type="submit" name="proses" type="submit" 
-      class="btn btn-primary" value="Simpan"/>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row">
+	<div class="col-md-8">
+<form action="proses_pesanan.php" method="POST">
+  <div class="form-group">
+    <label for="tanggal">Tanggal</label>
+    <input type="date" class="form-control" id="kode" >
   </div>
+  <div class="form-group">
+    <label for="nama">Nama customer</label>
+    <input type="text" class="form-control" id="nama" >
+  </div>
+  <div class="form-group">
+    <label for="alamat">Alamat customer</label>
+    <input type="text" class="form-control" id="harga_jual" >
+  </div>
+  <div class="form-group">
+    <label for="nohp">Nomor Handphone</label>
+    <input type="text" class="form-control" id="harga_beli" >
+  </div>
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="stok" >
+  </div>
+  <div class="form-group">
+    <label for="jumlah">Jumlah </label>
+    <input type="number" class="form-control" id="min_stok" >
+  </div>
+  <div class="form-group">
+    <label for="">Deskripsi</label>
+    <input type="text" class="form-control" id="deksripsi" >
+  </div>
+  <div class="form-group">
+    <label>produk</label>
+    <div>
+            <?php
+            $conn->query("USE $dbtoko");
+                $sqlkategori = "SELECT * FROM `produk`;";
+                $rskategori = $conn->query($sqlkategori);
+            ?>
+            <select name="produk" id="produk">
+            <?php
+                foreach($rskategori as $rowkategori){
+            ?>
+                <option value="<?=$rowkategori['id']?>" ><?=$rowkategori['nama']?></option>
+            <?php
+                }
+            ?>
+            </select>
+        </div>
+  </div>
+  <input class="btn btn-primary" type="submit" name="proses" value="Simpan">
 </form>
+    </div>
+    </div>
+</body>
+</html>
+
+<?php
+  include_once 'template\footer.php';
+?>

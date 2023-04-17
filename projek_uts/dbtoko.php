@@ -3,6 +3,7 @@
     $dbtoko = 'dbtoko';
     $username = 'root';
     $password = '';
+    $charset='utf8mb4';
 
 
     try{

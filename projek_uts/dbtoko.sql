@@ -17,6 +17,7 @@ CREATE TABLE produk (
     FOREIGN KEY (kategori_produk_id) REFERENCES kategori_produk(id)
 );
 
+
 CREATE TABLE pesanan (
     id INT PRIMARY KEY AUTO_INCREMENT,
     tanggal DATE NOT NULL,

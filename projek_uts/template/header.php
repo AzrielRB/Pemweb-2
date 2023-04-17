@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Blank Page</title>
+  <title>Dashboard</title>
+  <link rel="icon" type="image/x-icon" href="template/dist/img/sttnf.png" />
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -29,7 +30,7 @@
         <a href="produk.php" class="nav-link">Produk</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Pesanan</a>
+        <a href="list_pesanan.php" class="nav-link">Pesanan</a>
       </li>
     </ul>
 
@@ -84,7 +85,7 @@
         <div class="info">
           <a href="#" class="d-block">User</a>
         </div>
-        <a class="btn btn-primary" style="margin-left: 50px;" href="#">Logout</a>
+        <a class="btn btn-primary" style="margin-left: 50px;" href="index.php">Logout</a>
       </div>
 
       <!-- SidebarSearch Form -->
