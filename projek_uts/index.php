@@ -80,7 +80,7 @@
 							<div class="card-body p-4">
 								<div class="text-center">
 									<!-- Product name-->
-									<h5 class="fw-bolder">Sale Item</h5>
+									<h6 class="fw-bolder">Geoff Max - HF Court Black white | Sepatu Pria | Sneakers Pria - 40</h6>
 									<!-- Product price-->
 									IDR 250.000
 								</div>
@@ -106,7 +106,7 @@
 							<div class="card-body p-4">
 								<div class="text-center">
 									<!-- Product name-->
-									<h5 class="fw-bolder">Sale Item</h5>
+									<h6 class="fw-bolder">TJ002 DUST GREEN GORGEOUS TRUCKER TWILL JACKET</h6>
 									<!-- Product price-->
 									IDR 300.000
 								</div>
@@ -132,7 +132,7 @@
 							<div class="card-body p-4">
 								<div class="text-center">
 									<!-- Product name-->
-									<h5 class="fw-bolder">Sale Item</h5>
+									<h6 class="fw-bolder">Geoff Max - HF Court Black white | Sepatu Pria | Sneakers Pria - 40</h6>
 									<!-- Product price-->
 									IDR 270.000
 								</div>
@@ -158,8 +158,9 @@
 							<div class="card-body p-4">
 								<div class="text-center">
 									<!-- Product name-->
-									<h5 class="fw-bolder">Sale Item</h5>
+									<h6 class="fw-bolder">Roughneck SS482 Grey Contrast Stitch Crewneck</h6>
 									<!-- Product price-->
+									<br>
 									IDR 370.000
 								</div>
 							</div>
