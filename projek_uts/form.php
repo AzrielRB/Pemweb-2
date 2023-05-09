@@ -22,31 +22,31 @@
   </div>
   <div class="form-group">
     <label for="tanggal">Tanggal</label>
-    <input type="date" class="form-control" id="tanggal" >
+    <input type="date" class="form-control" id="tanggal" name="tanggal" >
   </div>
   <div class="form-group">
     <label for="nama_pemesan">Nama customer</label>
-    <input type="text" class="form-control" id="nama_pemesan" >
+    <input type="text" class="form-control" id="nama_pemesan" name="nama_pemesan">
   </div>
   <div class="form-group">
     <label for="alamat_pemesan">Alamat customer</label>
-    <input type="text" class="form-control" id="alamat_pemesan" >
+    <input type="text" class="form-control" id="alamat_pemesan" name="alamat_pemesan">
   </div>
   <div class="form-group">
     <label for="no_hp">Nomor Handphone</label>
-    <input type="text" class="form-control" id="no_hp" >
+    <input type="text" class="form-control" id="no_hp" name="no_hp">
   </div>
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" class="form-control" id="email" >
+    <input type="email" class="form-control" id="email" name="email">
   </div>
   <div class="form-group">
     <label for="jumlah_pesanan">Jumlah </label>
-    <input type="number" class="form-control" id="jumlah_pesanan" >
+    <input type="number" class="form-control" id="jumlah_pesanan" name="jumlah_pesanan">
   </div>
   <div class="form-group">
     <label for="">Deskripsi</label>
-    <input type="text" class="form-control" id="deksripsi" >
+    <input type="text" class="form-control" id="deksripsi" name="deskripsi">
   </div>
   <div class="form-group">
     <label>produk</label>

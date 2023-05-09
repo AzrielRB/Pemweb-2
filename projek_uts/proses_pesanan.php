@@ -37,5 +37,5 @@ require_once 'dbtoko.php';
     $stmt->execute($ar_data);
    }
 
-   header('location=list_pesanan.php');
+   header('location:list_pesanan.php');
 ?>
